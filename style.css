@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;
+    border:dashed; */
+    }
+
+body {
+    background-color: rgb(0, 84, 153);
+    color:rgb(231, 255, 200)
+}
+/* the main container */
+
+.card{
+ width:70%;
+ height: 90%;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(0, 84, 153);
+  border-radius: 20px;
+}
+
+.front-card{
+  
+  background-color: rgb(0, 84, 153);
+  background-position: center;
+  background-size:cover;
+}
+ 
+h1{
+  
+  /* to left align text */
+  font-size: 4em;
+  margin-top: 10%;
+  margin-left:18%;
+
+font-family: 'jost', sans-serif;
+}
+
+.icon img {
+  margin-left: 0px 0px 0px 10px;
+  width: 100%;
+}
+
+.back-text {
+  margin-top: 40%;
+  margin-left: 200%;
+}
+h2{
+  font-size: 2em;
+  margin-left: 18%;
+  font-family: 'jost', sans-serif;
+}
+h3{
+  font-size: 2em;
+  margin-left: 18%;
+  font-family: 'jost', sans-serif;
+}
+
+h4{
+  font-size: 2em;
+  margin-left: 950;
+  font-family: 'jost', sans-serif;
+}
+
+h5{
+  font-size: 4em;
+  margin-left: 800;
+  font-family: 'jost', sans-serif;
+}
+
+.icon-container{
+  width:100%;
+  display:grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+svg{
+  fill:rgb(231, 255, 200);
+}
+
+svg:hover{
+  fill:rgb(70, 186, 137);
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+
+
+.back-card {
+  background-image:url('assets/Background.png')  ;
+
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: rgb(0, 84, 153);
+    background-image: url('assets/backgroundInverted.png')
+  }
+  .card{
+  width:40%;
+  /* width:400px; */
+/* height:750px; */
+}
+}
+
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: rgb(0, 84, 153);
+    background-image: url('assets/backgroundInverted.png')
+  }
+  .card{
+  width:35%;
+  /* width:400px; */
+  /* height:750px; */
+
+}
+}
